@@ -9,6 +9,7 @@
 // Require our dependencies first
 var request = require('request');
 var method = Nodav.prototype;
+var parseString = require('xml2js').parseString;
 
 function Nodav (config) {
     this._server = config.server;
