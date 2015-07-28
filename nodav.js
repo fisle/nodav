@@ -23,7 +23,8 @@ method.get = function(url, method, payload) {
     console.log(url);
     console.log(method);
 
-    var options = {
+    var returndata = {};
+    request({
         url: url,
         method: method,
         multipart: [{ body: payload }],
@@ -33,17 +34,15 @@ method.get = function(url, method, payload) {
             'pass': this._password,
             'sendImmediately': false
         }
-    };
-
-    function callback(error, response, body) {
-        console.log(response.statusCode);
+    },
+    function (error, response, body) {
         console.log(body);
-    }
-    request(options, callback);
+        console.log(response.statusCode);
+    });
 };
 
 method.getTasks = function() {
-    this.get(this._server);
+    result = this.get(this._server);
 };
 
 method.getEvents = function() {
