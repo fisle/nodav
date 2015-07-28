@@ -1,0 +1,28 @@
+{
+  "name": "nodav",
+  "version": "0.0.1",
+  "description": "easy to use caldav library",
+  "main": "nodav.js",
+  "dependencies": {
+    "request": "^2.60.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fisle/nodav.git"
+  },
+  "keywords": [
+    "caldav",
+    "tasks",
+    "events"
+  ],
+  "author": "fisle <fisle@fisle.eu> (https://fisle.eu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fisle/nodav/issues"
+  },
+  "homepage": "https://github.com/fisle/nodav#readme"
+}
